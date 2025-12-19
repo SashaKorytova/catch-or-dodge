@@ -25,6 +25,8 @@ window.GAME_CONFIG = {
     { id: "bad-1", image: "assets/bad1.png" },
     { id: "bad-2", image: "assets/bad2.png" },
     { id: "bad-3", image: "assets/bad3.png" },
+    { id: "bad-4", image: "assets/bad4.png" },
+    { id: "bad-5", image: "assets/bad5.png" },
   ],
 
   rules: {
