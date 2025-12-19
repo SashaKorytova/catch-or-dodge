@@ -1,0 +1,4 @@
+Добавь состояния игрока:
+- player.png
+- player_happy.png
+- player_angry.png

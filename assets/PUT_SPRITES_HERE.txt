@@ -1,0 +1,5 @@
+Положи сюда:
+- background.jpg (16:9)
+- player.png
+- good1.png..good5.png
+- bad1.png..bad3.png

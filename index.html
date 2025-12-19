@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Лови/Избегай — мини-аркада</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div id="desktopGate" class="gate hidden">
+    <div class="gate__card">
+      <h1>Лучше играть на десктопе 🖥️</h1>
+      <p>Открой игру на компьютере или разверни окно шире.</p>
+      <small>Минимальная ширина — 900px.</small>
+    </div>
+  </div>
+
+  <header class="topbar">
+    <div class="brand">
+      <span class="brand__dot"></span>
+      <span class="brand__title">Лови / Избегай</span>
+      <span class="brand__subtitle">arrow keys arcade</span>
+    </div>
+
+    <div class="hud">
+      <div class="hud__item">
+        <span class="hud__label">Счёт</span>
+        <span id="hudScore" class="hud__value">0</span>
+      </div>
+      <div class="hud__item">
+        <span class="hud__label">Жизни</span>
+        <span id="hudLives" class="hud__value">3</span>
+      </div>
+      <div class="hud__item">
+        <span class="hud__label">Комбо</span>
+        <span id="hudCombo" class="hud__value">x1</span>
+      </div>
+      <div class="hud__item">
+        <span class="hud__label">Время</span>
+        <span id="hudTime" class="hud__value">00:00</span>
+      </div>
+    </div>
+
+    <div class="actions">
+      <button id="btnStart" class="btn" type="button">Старт</button>
+      <button id="btnRestart" class="btn btn--ghost" type="button">Рестарт</button>
+    </div>
+  </header>
+
+  <main class="stage">
+    <div class="frame">
+      <canvas id="game" width="1280" height="720"></canvas>
+      <div id="toast" class="toast hidden"></div>
+    </div>
+
+    <footer class="bottombar">
+      <div class="tip">
+        Управление: <span class="kbd">←</span><span class="kbd">→</span> • Пауза: <span class="kbd">Space</span>
+    </footer>
+  </main>
+
+  <div id="modal" class="modal hidden" role="dialog" aria-modal="true">
+    <div class="modal__card">
+      <h2 id="modalTitle">Готово!</h2>
+      <p id="modalText">Нажми «Старт».</p>
+      <div class="modal__actions">
+        <button id="btnClose" class="btn" type="button">Ок</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="config.js"></script>
+  <script src="game.js"></script>
+</body>
+</html>
